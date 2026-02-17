@@ -1,0 +1,4 @@
+<p>game-overview</p>
+@for (game of games(); track game.id) {
+  <game-item [game]="game"></game-item>
+}
