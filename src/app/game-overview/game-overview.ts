@@ -1,7 +1,6 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { GameItem } from './components/game-item';
-import { Games } from '../services/games.service';
-import { Game } from '../services/game.model';
+import { GameService } from './services/games.service';
 
 @Component({
   selector: 'app-game-overview',
@@ -10,7 +9,7 @@ import { Game } from '../services/game.model';
   styleUrl: './game-overview.css',
 })
 export class GameOverview implements OnInit {
-  private gameService = inject(Games);
+  private gameService = inject(GameService);
 
   games = signal<{ id: string, title: string, description: string }[]>([]);
 
