@@ -15,7 +15,7 @@ type Game = {
     </div>
   `,
   styles: `
-    .movie-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; }
+    .game-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; }
   `
 })
 export class GameItem {
